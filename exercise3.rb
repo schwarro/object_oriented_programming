@@ -64,7 +64,7 @@ player1 = Player.new
 puts "Player 1 has #{player1.lives} lives."
 player1.level_up
 puts "Player 1 leveled up. Player 1 now has #{player1.lives} lives."
-10.times do
+30.times do
   player1.collect_treasure
 end
 puts "Player 1 has collected #{player1.gold_coins} gold coins. Player 1 leveled up. Player 1 now has #{player1.lives} lives."
@@ -72,8 +72,8 @@ puts "Player 1 has collected #{player1.gold_coins} gold coins. Player 1 leveled 
 player1.do_battle(25)
 puts "Player 1 has taken damage. Health is now #{player1.health_points}. Player 1 has #{player1.lives} lives."
 
-1.times do
-  player1.do_battle(1)
+4.times do
+  player1.do_battle(10)
 end
 
 puts "Player 1 has #{player1.lives} lives, #{player1.gold_coins} gold coins and #{player1.health_points} health points."
